@@ -145,7 +145,7 @@ const Embed = () => {
         {huffmanCodes && Object.keys(huffmanCodes).length > 0 && (
           <div className="mt-8">
             <h3 className="text-2xl font-bold text-white mb-2">Huffman Codes</h3>
-            <pre className="bg-gray-700 p-4 rounded-md text-gray-300">
+            <pre className="bg-gray-700 p-4 rounded-md text-gray-300 overflow-y-auto max-h-96">
               {Object.entries(huffmanCodes).map(([char, code]) => (
                 <div key={char}>
                   {char}: {code}
@@ -157,7 +157,7 @@ const Embed = () => {
         {pwr>=0 && (
           <div className="mt-8">
             <h3 className="text-2xl font-bold text-white mb-2">Arithmetic pwr</h3>
-            <pre className="bg-gray-700 p-4 rounded-md text-gray-300">
+            <pre className="bg-gray-700 p-4 rounded-md text-gray-300 overflow-y-auto max-h-96">
               {<div>
                 {pwr}
               </div>}
@@ -167,7 +167,7 @@ const Embed = () => {
         {freq && (
           <div className="mt-8">
             <h3 className="text-2xl font-bold text-white mb-2">Arithmetic freq</h3>
-            <pre className="bg-gray-700 p-4 rounded-md text-gray-300">
+            <pre className="bg-gray-700 p-4 rounded-md text-gray-300 overflow-y-auto max-h-96">
               {Object.entries(freq).map(([char, code]) => (
                 <div key={char}>
                   {char}: {code}
